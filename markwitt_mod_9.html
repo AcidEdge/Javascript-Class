@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<!-- 
+Mark Witt
+CSD-360
+Module 9 Assignment
+4/26/2023
+JavaScript function taking array as parameter, returning array of counted values (negative, zero, positive)
+-->
+
+<html lang="en">
+    <head>
+        <title>Module 9 Assignment</title>
+
+        <link href="site.css" type="text/css" rel="stylesheet" >
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <script>
+            const initArray = [19, 0, -7, -1, 31, 0, -14, 23, 28, 99, -1, 0, 14, -99, -14, 47, 98, -14];
+        </script>
+    </head>
+    <body>
+        <h1>Module 9 Assignment</h1>
+        <h2>JavaScript - More Functions</h2>
+        <div class="container">
+            <div class="card">
+                <p>Assignment: Create a function titled counter that takes an array of numbers as the parameter. The function is then to return an array holding the numbers of negative elements, zeros, and values greater than zero in the given array parameter. Initial Array included in HTML code.</p>
+                <p id = "initialArray"></p>
+                <p id = "countedArray"></p>
+                <p id= "negatives"></p>
+                <p id = "zeros"></p>
+                <p id = "positives"></p>
+            </div>
+        </div>
+        <script>
+            //array outputs:
+            document.getElementById("initialArray").innerHTML = "Initial Array: <br>" + initArray;
+            document.getElementById("countedArray").innerHTML = "Counted Array (negatives, zeros, positives): <br>" + counter(initArray);
+            document.getElementById("negatives").innerHTML = "Initial Array has " + counter(initArray)[0] + " negative numbers.";
+            document.getElementById("zeros").innerHTML = "Initital Array has " + counter(initArray)[1] + " zeros.";
+            document.getElementById("positives").innerHTML = "Initial Array has " + counter(initArray)[2] + " positive numbers.";
+
+            //funtion to loop through array parameter and count values, returning counted array:
+            function counter(array1){  
+                const countedArray = [0, 0, 0];
+                for(var i =0; i < array1.length; ++i){
+                    if (array1[i] < 0){
+                        countedArray[0]++;
+                    }
+                    if (array1[i] == 0){
+                        countedArray[1]++; 
+                    }
+                    if (array1[i] > 0){
+                        countedArray[2]++;
+                    }
+                }
+                return countedArray;
+            };
+        </script>
+    </body>
+    <footer><p>
+        <a href="index.html">back to Landing Page</a></p>
+    </footer>
+</html>
+
+

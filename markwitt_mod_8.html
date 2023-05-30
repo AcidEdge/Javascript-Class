@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<!-- 
+Mark Witt
+CSD-360
+Module 7 Assignment
+4/20/2023
+JavaScript array of 10 teams, output with for loop in original and in reverse order
+-->
+
+<html lang="en">
+    <head>
+        <title>Module 8 Assignment</title>
+
+        <link href="site.css" type="text/css" rel="stylesheet" >
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <script>
+            var start = 4;
+        </script>
+    </head>
+    <body>
+        <h1>Module 8 Assignment</h1>
+        <h2>JavaScript Built-In Functions</h2>
+        <div class="container">
+            <div class="card">
+                <table class="math">
+                    <tr>
+                        <th>Initial Value</th>
+                        <th>Square Root (&radic; )</th>
+                        <th>Power of 2 ( x<sup>2</sup> )</th>
+                        <th>Power of 3 ( x<sup>3</sup> )</th>
+                    </tr>
+                    <tbody>
+                        <script>
+                            for (start; start <= 14; start++){
+                                document.write("<tr>");
+                                    document.write("<td>" + start + "</td>");
+                                    document.write("<td>" + (Math.sqrt(start)).toFixed(2) + "</td>");
+                                    document.write("<td>" + (Math.pow(start, 2)) + "</td>");
+                                    document.write("<td>" + (Math.pow(start, 3)) + "</td>");
+                                document.write("</tr>");
+                            }
+                        </script>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+    </body>
+    <footer><p>
+        <a href="index.html">back to Landing Page</a></p>
+    </footer>
+</html>
+
+

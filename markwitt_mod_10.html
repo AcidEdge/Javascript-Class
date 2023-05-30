@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<!-- 
+Mark Witt
+CSD-360
+Module 10 Assignment
+5/6/2023
+JavaScript event handling, changing style and image on mouseover event. changes image and all styling back - and plays trumpet fanfare on mouseout
+-->
+
+<html lang="en">
+    <head>
+        <title>Module 10 Assignment</title>
+
+        <link href="site.css" type="text/css" rel="stylesheet" >
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap" rel="stylesheet">
+        
+    </head>
+    <body>
+        <h1 id="title1">Module 10 Assignment</h1>
+        <h2 id="title2">JavaScript - Event Handling</h2>
+        <h3 id="title">H.R.M. King Charles III Monogram</h3>
+        <div class="container">
+            <div class="card">
+                <p style="text-align: center;">The Royal Monogram of Late Majesty Queen Elizabeth II.<br> Mouseover the image to view the monogram of His Majesty King Charles III.</p>
+                <img id="img1" src="media/CRiii.jpg" style="width: 640; height: 800; margin-left: 13%;" onmouseover="elizabeth()" onmouseout="charles()">
+                
+            </div>
+        </div>
+        <script>
+            function elizabeth() {
+                document.getElementById("img1").src = "media/ERii.jpg";
+                document.getElementById("title").style.backgroundColor = "#D6A800";
+                document.getElementById("title").style.color = "#4F3674";
+                document.getElementById("title").innerHTML = "H.R.M. Queen Elizabeth II Monogram";
+                document.getElementById("title1").style.backgroundColor = "#D6A800";
+                document.getElementById("title1").style.color = "#4F3674";
+                document.getElementById("title2").style.backgroundColor = "#D6A800";
+                document.getElementById("title2").style.color = "#4F3674";
+                
+            };
+            function charles(){
+                document.getElementById("img1").src = "media/CRiii.jpg";
+                document.getElementById("title").style.backgroundColor = "#4F3674"
+                document.getElementById("title").style.color = "white";
+                document.getElementById("title").innerHTML = "H.R.M. King Charles III Monogram";
+                document.getElementById("title1").style.backgroundColor = "#4F3674"
+                document.getElementById("title1").style.color = "white";
+                document.getElementById("title2").style.backgroundColor = "#4F3674"
+                document.getElementById("title2").style.color = "white";
+                myTrumpet();
+            };
+            function myTrumpet(){
+                var audio = new Audio("media/trumpet-fanfare.mp3");
+                audio.play();
+            }
+            
+        </script>
+    </body>
+    <footer><p>
+        <a href="index.html">back to Landing Page</a></p>
+    </footer>
+</html>
+
+

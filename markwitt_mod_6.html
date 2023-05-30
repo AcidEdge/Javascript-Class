@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<!-- 
+Mark Witt
+CSD-360
+Module 6 Assignment
+4/12/2023
+-->
+
+<html lang="en">
+    <head>
+        <title>Module 6 Assignment</title>
+
+        <link href="site.css" type="text/css" rel="stylesheet" >
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap" rel="stylesheet">
+        
+    </head>
+    <body>
+        <h1>Module 6 Assignment</h1>
+        <h2 id="title2">JavaScript - Itteration</h2>
+        <h3>First 30 Fibonaci Numbers Through Itteration</h3>
+        <div class="container">
+            <div class="card" align="center">
+                <script>
+                    //fucntion to figure out fibonacci number at index (n)
+                    function fibonacci(n) {
+                        return n < 1 ? 0
+                        :n <= 2 ? 1
+                        :fibonacci(n - 1) + fibonacci(n - 2)
+                    }
+                    //for loop to iterate through and display first 30 fibonacci numbers
+                    for (var i = 1; i < 31; i++){
+                        document.write(i + " - " + fibonacci(i) + "<br>");
+                        
+                    }
+                </script>
+            </div>
+        </div>
+    </body>
+    <footer><p>
+        <a href="index.html">back to Landing Page</a></p>
+    </footer>
+</html>

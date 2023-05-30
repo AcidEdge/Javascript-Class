@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<!-- 
+Mark Witt
+CSD-360
+Module 4 Assignment
+03/29/2023
+-->
+
+<html lang="en">
+    <head>
+        <title>Module 4 Assignment</title>
+
+        <link href="site.css" type="text/css" rel="stylesheet" >
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap" rel="stylesheet">
+        
+        <script>
+            var i = 842;
+        </script>
+
+    </head>
+    <body>
+        
+        <h1>Module 4 Assignment</h1>
+        <h2 id="title2">JavaScript - Operators</h2>
+        <div class="container">
+            <div class="card" align="center">
+                <p id = "i"></p>
+                <p id = "answer" style="font-weight: bold;"></p>
+                <p>Select a formula to view its results:</p>
+                <button type="button" onclick="document.getElementById('answer').innerHTML = 'The formula (i + i % 3 / 7 - 2 + 7 ** 3) = ' + (i + i % 3 / 7 - 2 + 7 ** 3)">(i + i % 3 / 7 - 2 + 7 ** 3)</button>  (original formula)<br/>
+                <button type="button" onclick="document.getElementById('answer').innerHTML = 'The formula ((i + i) % 3 / 7 - 2 + 7 ** 3) = ' + ((i + i) % 3 / 7 - 2 + 7 ** 3)">((i + i) % 3 / 7 - 2 + 7 ** 3)</button><br/>
+                <button type="button" onclick="document.getElementById('answer').innerHTML = 'The formula (i + i % 3 / (7 - 2) + 7 ** 3) = ' + (i + i % 3 / (7 - 2) + 7 ** 3)">(i + i % 3 / (7 - 2) + 7 ** 3)</button><br/>
+                <button type="button" onclick="document.getElementById('answer').innerHTML = 'The formula (i + i % 3 / ( 7 - 2 + 7) ** 3) = ' + (i + i % 3 / ( 7 - 2 + 7) ** 3)">(i + i % 3 / ( 7 - 2 + 7) ** 3)</button><br/>
+                <button type="button" onclick="document.getElementById('answer').innerHTML = 'The formula (i + i % 3 / 7 - (2 + 7) ** 3) = ' + (i + i % 3 / 7 - (2 + 7) ** 3)">(i + i % 3 / 7 - (2 + 7) ** 3)</button><br/>
+                <button type="button" onclick="document.getElementById('answer').innerHTML = 'The formula ((i + i) % 3 / (7 - 2) + 7 ** 3) = ' + ((i + i) % 3 / (7 - 2) + 7 ** 3)">((i + i) % 3 / (7 - 2) + 7 ** 3)</button><br/>
+                <button type="button" onclick="document.getElementById('answer').innerHTML = 'The formula (i + i % 3 / (7 - (2 + 7)) ** 3) = ' + (i + i % 3 / (7 - (2 + 7)) ** 3)">(i + i % 3 / (7 - (2 + 7)) ** 3)</button><br/>
+                
+            </div>
+        </div>
+
+        <script>
+            document.getElementById("i").innerHTML = "Variable i= " + i;
+            document.getElementById("answer").innerHTML = "The formula (i + i % 3 / 7 - 2 + 7 ** 3) = " + (i + i % 3 / 7 - 2 + 7 ** 3); 
+        </script>
+
+
+    </body>
+    <footer><p>
+        <a href="index.html">back to Landing Page</a></p>
+
+    </footer>
+</html>

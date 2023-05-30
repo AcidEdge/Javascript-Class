@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<!-- 
+Mark Witt
+CSD-360
+Module 11 Assignment
+5/6/2023
+JavaScript / HTML DOM - image gallery based on given example with JS DOM transitioning. 
+-->
+
+<html lang="en">
+    <head>
+        <title>Module 11 Assignment</title>
+
+        <link href="site.css" type="text/css" rel="stylesheet" >
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap" rel="stylesheet">
+        
+   
+    </head>
+    <body>
+        <h1 id="title1">Module 11 Assignment</h1>
+        <h2 id="title2">JavaScript - DOM</h2>
+        
+        <div class="container">
+            <div class="card" >
+               <p class="wishwalk" style="text-align: center;"><a href="https://www.greatlakesgarrison.com//" class="garrison-link" target="_blank" title="Michigan's 501st Legion - Bad Guys Doing Good">501st Legion - Great Lakes Garrison</a><br><i>Attending the Make-A-Wish Foundation's annual Walk-For-Wishes event on May 6, 2023 in Royal Oak, MI</i></p>
+               <div>
+                <table class="top-table">
+                    <tr>
+                        <td rowspan="3">
+                            <img src="media/wish-1.JPG" id="mainImage" alt="Large Image" width="400" height="300">
+                        </td>
+                    </tr>
+                    <tr class="logos">
+                        <td><a href="https://wish.org/" target="_blank" title="Make-A-Wish Foundation"><img src="media/maw_logo_white.png"></a></td>
+                        </tr><tr class="logos">
+                        <td width = "254px" align="center"><a href="https://secure2.wish.org/site/TR?fr_id=4832&pg=entry" target="_blank" title="Walk-For-Wishes - Royal Oak, MI"><img src="media/wfw_logo_white.png"></a></td>
+                    </tr>
+                </table>
+               </div>
+               
+               <table align="center">
+                <tr>
+                    <td><img src="media/wish-1-thumb.png" onclick="switchImage('media/wish-1.JPG')"></td>
+                    <td><img src="media/wish-2-thumb.png" onclick="switchImage('media/wish-2.JPG')"></td>
+                    <td><img src="media/wish-3-thumb.png" onclick="switchImage('media/wish-3.JPG')"></td>
+                    <td><img src="media/wish-4-thumb.png" onclick="switchImage('media/wish-4.JPG')"></td>
+                </tr>
+                <tr>
+                    <td><img src="media/wish-5-thumb.png" onclick="switchImage('media/wish-5.JPG')"></td>
+                    <td><img src="media/wish-6-thumb.png" onclick="switchImage('media/wish-6.JPG')"></td>
+                    <td><img src="media/wish-7-thumb.png" onclick="switchImage('media/wish-7.JPG')"></td>
+                    <td><img src="media/wish-8-thumb.png" onclick="switchImage('media/wish-8.JPG')"></td>
+                </tr>
+               </table>
+
+            </div>
+        </div>
+        <script>
+            function switchImage(imageFile){
+                var largerImage = document.getElementById("mainImage");
+                var newNode = document.createElement("img");
+                newNode.id = "mainImage";
+                newNode.src = imageFile;
+                newNode.alt = "Large Image";
+                newNode.className = "mainImage";
+                newNode.style.width = "400px";
+                newNode.style.height = "300px";
+                largerImage.parentNode.replaceChild(newNode, largerImage);
+      }
+          </script>
+    </body>
+    <footer><p>
+        <a href="index.html">back to Landing Page</a></p>
+    </footer>
+</html>
+
+

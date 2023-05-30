@@ -1,0 +1,144 @@
+body{
+    font-family: 'Oswald', 'Verdana', 'Arial', 'sans-serif';
+    color: black;
+}
+
+.container{
+    margin-top: 50px;
+
+}
+
+h1, h2, h3, h4 {
+    background-color: #3c275a;
+    color: #fff;
+    border: 1px;
+    border-style: solid;
+    border-color: #D6A800;
+    padding: 10px;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+a:link {
+    color: #453674;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: #D6A800;
+    color: #4F3674;
+}
+
+a:visited {
+    color: #3c275a;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+}
+
+footer p {
+    color: white;
+    font-weight: 400;
+    float: right;
+    padding: 10px;
+    font-style: italic;
+    font-size: large;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25);
+    transition: 0.3s;
+    width: 50%;
+    color:black;
+    margin-left: 25%;
+    width: 50%;
+    padding: 2px 10px 10px 10px;
+}
+
+.card-title {
+    color: #3c275a;
+}
+
+.card-content {
+    text-align: left;
+    margin-left: 40%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.teams {
+    text-align: left;
+    width: 50%;
+    margin-left: 25%;
+}
+
+.teams-head {
+    text-decoration: underline;
+}
+
+.math {
+    text-align: center;
+    width: 60%;
+    margin-left: 20%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.math th {
+    text-transform: uppercase;
+    border-top: 1px solid #3c275a;
+    border-bottom: 2px solid #3c275a;
+
+}
+
+.logos img{
+    background-color: #0055b7;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: 25px;
+}
+
+.logos a:hover{
+    background-color: white;
+}
+
+.logos img:hover {
+    background-color: #D6A800;
+}
+
+.garrison-link:hover {
+    text-decoration: underline;
+}
+
+.wishwalk {
+    font-size: large;
+}
+
+.top-table {
+    margin-left: 6%;
+   
+}
+
+.mainImg {
+width: 450px;
+height: 350px;
+}

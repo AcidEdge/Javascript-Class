@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<!-- Mark Witt
+    CSD-360
+Module 3 Assignment-->
+
+<html lang="en">
+    <head>
+        <title>Module 3 Assignment</title>
+
+        <link href="site.css" type="text/css" rel="stylesheet" >
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap" rel="stylesheet">
+        
+        <script>
+            var firstVariableValue = "Detroit Red Wings Star Wars Night";
+            var secondVariableValue = "Little Caesar's Arena";
+            var thirdVariableValue  = "Stormtroopers";
+            var fourthVariableValue = "Detroit Tigers";
+        </script>
+
+    </head>
+    <body>
+        <h1>Module 3 Assignment</h1>
+        <h2 id="title2">Variables, Scope, and Updating Text and Markup</h2>
+        <p><u>My First Professional Sporting Event as a Stormtrooper:</u></p>
+        <p>I was so excited to attend my first professional sporting event with the 501st, getting to troop at the <span id="redwings">__________________________________</span> as a stormtrooper. I had completed many other events in the past, but this was the first at a sporting event. </p>
+        <p>Arrival at the event was overall what I had expected. Went through security, and was escorted back to our changing area. What was truly impressive was the massive scale of <span id="arena">___________________________</span>. This was my first time going to the new arena, and the size was incredible. Under the concourse is a vast network of hallways and various rooms for offices, dressing rooms, etc., which is where our changing room was located. These rooms are all located on ice level and surround the entire rink. </p>
+        <p>Once we were dressed in costume we went up to the concourse for our garrison group photo and to get into positions for the doors to open. I was a part of a squad of four <span id="stormtrooper">___________________________</span> that were assigned to wander through the concourse greeting guests, while others were assigned to designated photo-op stations. As we wandered we ended up getting stopped near one of the entrances, and quickly became overwhelmed with fans lining up to get pictures. In a matter of a few minutes we had a line that was 20 plus deep, which did not stop until five minutes after the game started. </p>
+        <p>Once the game started we worked our way back through the concourse to our changing area, where we were all given special commemorative Red Wings t-shirts and tickets for the game. We spent the rest of the evening in the lower bowl of the arena watching the game and having fun as a group. It was truly a wonderful experience, and I cant wait for the next sports game I get to troop, the <span id="tigers">___________________________</span> on May 18th!</p>
+        <p>
+            <button type="button" onclick="document.getElementById('redwings').innerHTML = firstVariableValue">Detroit Red Wings Star Wars Night</button><br/>
+            <button type="button" onclick="document.getElementById('arena').innerHTML = secondVariableValue">Little Caesar's Arena</button><br/>
+            <button type="button" onclick="document.getElementById('stormtrooper').innerHTML = thirdVariableValue">Stormtroopers</button><br/>
+            <button type="button" onclick="document.getElementById('tigers').innerHTML = fourthVariableValue">Detroit Tigers</button><br/>
+        </p>
+    </body>
+    <footer><p>
+        <a href="index.html">back to Landing Page</a></p>
+
+    </footer>
+</html>
